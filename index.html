@@ -1,17 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Code Magic</title>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
 </head>
 <body>
-    <main>
+<header>
+
+</header>
+<main>
+
+    <section data-name="number game">
         <label>
             <input id="input_for_random_number" type="number">
         </label>
         <button id="btn_for_random_number">Check</button>
         <p id="p_for_random_number"></p>
-    </main>
-<script src="index.js" type="module" async></script>
+    </section>
+
+    <section data-name="calculator">
+
+        <div class="container">
+            <label>
+                <input type="number" id="1st_number" placeholder="Type your 1st number">
+            </label>
+            <p id="operator"></p>
+            <label>
+                <input type="number" id="2nd_number" placeholder="Type your 2nd number">
+            </label>
+            <div class="operations">
+                <button id="addition">+</button>
+                <button id="subtraction">-</button>
+                <button id="multiplication">*</button>
+                <button id="division">/</button>
+                <button id="equal">=</button>
+            </div>
+            <div class="result">
+                <p>Result: <span id="result"></span></p>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+
+    </section>
+</main>
+<footer>
+
+</footer>
+<script type="module" src="/src/main.js" async></script>
 </body>
 </html>
