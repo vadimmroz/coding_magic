@@ -10,20 +10,22 @@ const random_number = () => {
 
         if (input_value === random_num) {
             p.innerText = "Ти вгадав!"
-            setTimeout(() => {random_number()}, 3000)
+            setTimeout(() => {
+                random_number()
+            }, 3000)
             return
-        }
-        else if (input_value > random_num) {
+        } else if (input_value > random_num) {
             p.innerText = "Спробуй менше"
-        }
-        else {
+        } else {
             p.innerText = "Спробуй більше"
         }
 
         counter = counter - 1
         if (counter === 0) {
             p.innerText = "Ти програв"
-            setTimeout(() => {random_number()}, 3000)
+            setTimeout(() => {
+                random_number()
+            }, 3000)
         }
     })
 }
