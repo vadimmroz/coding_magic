@@ -22,3 +22,9 @@ button {
     font-size: 18px;
     margin-top: 20px;
 }
+
+section{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}

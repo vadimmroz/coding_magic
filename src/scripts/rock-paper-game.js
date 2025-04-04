@@ -2,7 +2,7 @@ let playerScore = 0;
 let computerScore = 0;
 let ties = 0;
 
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('[data-name="rock-paper-game"] button');
 const resultDiv = document.querySelector('.result');
 const scoreDiv = document.querySelector('.score');
 
