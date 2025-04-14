@@ -1,5 +1,8 @@
+import "./components/header/header.js"
 import "./scripts/calculator.js"
 import "./scripts/findNumber.js"
 import "./scripts/rock-paper-game.js"
 import "./scripts/time-setter.js"
 import "./scripts/max-number.js"
+import "./scripts/dropdown.js"
+import "./scripts/theme.js"

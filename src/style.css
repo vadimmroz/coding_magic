@@ -1,13 +1,15 @@
 @import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 50px;
 }
 .buttons {
     margin: 20px;
 }
-button {
+
+main button {
     padding: 10px 20px;
     margin: 0 10px;
     font-size: 18px;
@@ -27,4 +29,8 @@ section{
     margin: 20px;
     padding: 20px;
     border: 1px solid black;
+}
+
+@utility transition {
+    transition: .3s all;
 }

@@ -2,105 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <link rel="icon" type="image/svg+xml" href="/src/images/logoTitle.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vite App</title>
+    <title>Code magic</title>
     <link rel="stylesheet" href="./src/style.css"/>
 </head>
-<body>
-<header>
-
-</header>
+<body class="bg-white dark:bg-black text-black dark:text-white transition">
+<our-header></our-header>
 <main>
-
-    <section data-name="number game" class="p-4 border rounded">
-        <label>
-            <input id="input_for_random_number" type="number">
-        </label>
-        <button id="btn_for_random_number">Check</button>
-        <p id="p_for_random_number"></p>
-    </section>
-
-    <section data-name="calculator">
-
-        <div class="container">
+    <div class="container mx-auto">
+        <section data-name="number game" class="p-4 border rounded">
             <label>
-                <input type="number" id="1st_number" placeholder="Type your 1st number">
+                <input id="input_for_random_number" type="number">
             </label>
-            <p id="operator"></p>
-            <label>
-                <input type="number" id="2nd_number" placeholder="Type your 2nd number">
-            </label>
-            <div class="operations">
-                <button id="addition">+</button>
-                <button id="subtraction">-</button>
-                <button id="multiplication">*</button>
-                <button id="division">/</button>
-                <button id="equal">=</button>
-            </div>
-            <div class="result">
-                <p>Result: <span id="result"></span></p>
-            </div>
-        </div>
+            <button id="btn_for_random_number">Check</button>
+            <p id="p_for_random_number"></p>
+        </section>
 
-    </section>
+        <section data-name="calculator">
 
-    <section data-name="rock-paper-game">
-        <h1>Камінь-Ножиці-Папір</h1>
-
-        <div class="buttons">
-            <button data-choice="камінь">Камінь</button>
-            <button data-choice="ножиці">Ножиці</button>
-            <button data-choice="папір">Папір</button>
-        </div>
-
-        <div class="result"></div>
-        <div class="score"></div>
-    </section>
-
-    <section data-name="time-setter">
-        <div class="container">
-            <label class="border px-4 py-2 rounded">
-                <input id="input_of_num" type="number">
-            </label>
-            <button class="bg-black text-white rounded !px-4 !py-2" id="btn1">convert</button>
-            <div class="flex gap-1 justify-center">
-                <p id="first_half_of_time">00</p>
-                <p>:</p>
-                <p id="second_half_of_time">00</p>
-                <p>:</p>
-                <p id="third_half_of_time">00</p>
+            <div class="container">
+                <label>
+                    <input type="number" id="1st_number" placeholder="Type your 1st number">
+                </label>
+                <p id="operator"></p>
+                <label>
+                    <input type="number" id="2nd_number" placeholder="Type your 2nd number">
+                </label>
+                <div class="operations">
+                    <button id="addition">+</button>
+                    <button id="subtraction">-</button>
+                    <button id="multiplication">*</button>
+                    <button id="division">/</button>
+                    <button id="equal">=</button>
+                </div>
+                <div class="result">
+                    <p>Result: <span id="result"></span></p>
+                </div>
             </div>
 
-        </div>
-    </section>
+        </section>
 
-    <section data-name="max-number">
-        <h2>Знаходження найбільшого числа</h2>
-        <p>Введіть три числа:</p>
+        <section data-name="rock-paper-game">
+            <h1>Камінь-Ножиці-Папір</h1>
 
-        <div>
-            <label for="num1">Число 1:</label>
-            <input type="text" id="num1">
-            <span id="error1" class="error"></span>
-        </div>
+            <div class="buttons">
+                <button data-choice="камінь">Камінь</button>
+                <button data-choice="ножиці">Ножиці</button>
+                <button data-choice="папір">Папір</button>
+            </div>
 
-        <div>
-            <label for="num2">Число 2:</label>
-            <input type="text" id="num2">
-            <span id="error2" class="error"></span>
-        </div>
+            <div class="result"></div>
+            <div class="score"></div>
+        </section>
 
-        <div>
-            <label for="num3">Число 3:</label>
-            <input type="text" id="num3">
-            <span id="error3" class="error"></span>
-        </div>
+        <section data-name="time-setter">
+            <div class="container">
+                <label class="border px-4 py-2 rounded">
+                    <input id="input_of_num" type="number">
+                </label>
+                <button class="bg-black text-white rounded !px-4 !py-2" id="btn1">convert</button>
+                <div class="flex gap-1 justify-center">
+                    <p id="first_half_of_time">00</p>
+                    <p>:</p>
+                    <p id="second_half_of_time">00</p>
+                    <p>:</p>
+                    <p id="third_half_of_time">00</p>
+                </div>
 
-        <button id="findMaxBtn">Знайти найбільше число</button>
+            </div>
+        </section>
 
-        <div id="result1"></div>
-    </section>
+        <section data-name="max-number">
+            <h2>Знаходження найбільшого числа</h2>
+            <p>Введіть три числа:</p>
+
+            <div>
+                <label for="num1">Число 1:</label>
+                <input type="text" id="num1">
+                <span id="error1" class="error"></span>
+            </div>
+
+            <div>
+                <label for="num2">Число 2:</label>
+                <input type="text" id="num2">
+                <span id="error2" class="error"></span>
+            </div>
+
+            <div>
+                <label for="num3">Число 3:</label>
+                <input type="text" id="num3">
+                <span id="error3" class="error"></span>
+            </div>
+
+            <button id="findMaxBtn">Знайти найбільше число</button>
+
+            <div id="result1"></div>
+        </section>
+    </div>
 </main>
 <footer>
 
