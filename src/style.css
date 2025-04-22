@@ -2,6 +2,14 @@
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+:root{
+    --border: black
+}
+
+html[data-theme=dark] {
+    --border: white;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -32,7 +40,7 @@ main button {
 section {
     margin: 20px;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid var(--border);
 }
 
 @utility transition {
@@ -40,7 +48,7 @@ section {
 }
 
 .dino_jump{
-      animation: dinoJump 1s forwards 1 ease-in-out;
+      animation: dinoJump 1s forwards 1 ease-out;
 }
 
 .cactus_animation {
