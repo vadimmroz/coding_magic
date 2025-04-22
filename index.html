@@ -11,30 +11,30 @@
 <our-header></our-header>
 <main>
     <div class="container mx-auto">
-        <section data-name="number game" class="p-4 border rounded">
+        <section data-name="number game" class="p-4 border dark:border-white rounded">
             <label>
-                <input id="input_for_random_number" type="number">
+                <input class="border dark:border-white px-4 py-2 rounded" id="input class=border dark:border-white px-4 py-2 rounded_for_random_number" type="number">
             </label>
-            <button id="btn_for_random_number">Check</button>
+            <button id="btn_for_random_number" class="bg-black text-white rounded !px-4 dark:bg-white dark:text-black !py-2">Check</button>
             <p id="p_for_random_number"></p>
         </section>
 
         <section data-name="calculator">
 
-            <div class="container">
+            <div class="container flex flex-col gap-2">
                 <label>
-                    <input type="number" id="1st_number" placeholder="Type your 1st number">
+                    <input class="border dark:border-white px-4 py-2 rounded" type="number" id="1st_number" placeholder="Type your 1st number">
                 </label>
                 <p id="operator"></p>
                 <label>
-                    <input type="number" id="2nd_number" placeholder="Type your 2nd number">
+                    <input class="border dark:border-white px-4 py-2 rounded" type="number" id="2nd_number" placeholder="Type your 2nd number">
                 </label>
-                <div class="operations">
-                    <button id="addition">+</button>
-                    <button id="subtraction">-</button>
-                    <button id="multiplication">*</button>
-                    <button id="division">/</button>
-                    <button id="equal">=</button>
+                <div class="operations flex justify-center">
+                    <button class="bg-black text-white rounded !px-4 dark:bg-white dark:text-black !py-2 text-center flex justify-center items-center" id="addition">+</button>
+                    <button class="bg-black text-white rounded !px-4 dark:bg-white dark:text-black !py-2 text-center flex justify-center items-center" id="subtraction">-</button>
+                    <button class="bg-black text-white rounded !px-4 dark:bg-white dark:text-black !py-2 text-center flex justify-center items-center" id="multiplication">*</button>
+                    <button class="bg-black text-white rounded !px-4 dark:bg-white dark:text-black !py-2 text-center flex justify-center items-center" id="division">/</button>
+                    <button class="bg-black text-white rounded !px-4 dark:bg-white dark:text-black !py-2 text-center flex justify-center items-center" id="equal">=</button>
                 </div>
                 <div class="result">
                     <p>Result: <span id="result"></span></p>
@@ -47,9 +47,9 @@
             <h1>Камінь-Ножиці-Папір</h1>
 
             <div class="buttons">
-                <button data-choice="камінь">Камінь</button>
-                <button data-choice="ножиці">Ножиці</button>
-                <button data-choice="папір">Папір</button>
+                <button class="bg-black text-white rounded !px-4 dark:bg-white dark:text-black !py-2 text-center" data-choice="камінь">Камінь</button>
+                <button class="bg-black text-white rounded !px-4 dark:bg-white dark:text-black !py-2 text-center" data-choice="ножиці">Ножиці</button>
+                <button class="bg-black text-white rounded !px-4 dark:bg-white dark:text-black !py-2 text-center" data-choice="папір">Папір</button>
             </div>
 
             <div class="result"></div>
@@ -58,10 +58,10 @@
 
         <section data-name="time-setter">
             <div class="container">
-                <label class="border px-4 py-2 rounded">
-                    <input id="input_of_num" type="number">
+                <label class="border dark:border-white px-4 py-2 rounded">
+                    <input  id="input class=border dark:border-white px-4 py-2 rounded_of_num" type="number">
                 </label>
-                <button class="bg-black text-white rounded !px-4 !py-2" id="btn1">convert</button>
+                <button class="bg-black text-white rounded !px-4 dark:bg-white dark:text-black !py-2" id="btn1">convert</button>
                 <div class="flex gap-1 justify-center">
                     <p id="first_half_of_time">00</p>
                     <p>:</p>
@@ -77,31 +77,31 @@
             <h2>Знаходження найбільшого числа</h2>
             <p>Введіть три числа:</p>
 
-            <div>
+            <div class="mb-2">
                 <label for="num1">Число 1:</label>
-                <input type="text" id="num1">
+                <input class="border dark:border-white px-4 py-2 rounded" type="text" id="num1">
                 <span id="error1" class="error"></span>
             </div>
 
-            <div>
+            <div class="mb-2">
                 <label for="num2">Число 2:</label>
-                <input type="text" id="num2">
+                <input class="border dark:border-white px-4 py-2 rounded" type="text" id="num2">
                 <span id="error2" class="error"></span>
             </div>
 
-            <div>
+            <div class="mb-2">
                 <label for="num3">Число 3:</label>
-                <input type="text" id="num3">
+                <input class="border dark:border-white px-4 py-2 rounded" type="text" id="num3">
                 <span id="error3" class="error"></span>
             </div>
 
-            <button id="findMaxBtn">Знайти найбільше число</button>
+            <button class="bg-black text-white rounded !px-4 dark:bg-white dark:text-black !py-2 text-center" id="findMaxBtn">Знайти найбільше число</button>
 
             <div id="result1"></div>
         </section>
 
         <section data-name="dino">
-           <article class="w-[90%] h-60 my-4 mx-auto border relative overflow-hidden flex" id="game">
+           <article class="w-[90%] h-60 my-4 mx-auto border dark:border-white relative overflow-hidden flex" id="game">
 
            </article>
         </section>
