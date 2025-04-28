@@ -1,6 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('findMaxBtn').addEventListener('click', findMaxNumber);
-});
+document.getElementById('findMaxBtn').addEventListener('click', findMaxNumber);
+
 
 function findMaxNumber() {
     document.getElementById('error1').textContent = '';
@@ -39,10 +38,12 @@ function findMaxNumber() {
         document.getElementById('result1').textContent = `Найбільше число: ${maxNumber}`;
     }
 }
+
 function isValidNumber(str) {
     if (str === '') return false;
     return !isNaN(str) && !isNaN(parseFloat(str));
 }
+
 function parseNumber(str) {
     return str.includes('.') ? parseFloat(str) : parseInt(str, 10);
 }
